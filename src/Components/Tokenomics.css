@@ -1,0 +1,127 @@
+.tokenomics-container{
+    width: 100%;
+    height: 100%;
+color: white;
+position: relative;
+overflow: hidden;
+}
+
+.overlayss img{
+    user-select: none;
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    left: 25%;
+    bottom: 0;
+}
+
+.tokenomics-container h1{
+    font-size: 35px;
+    text-shadow: 3px 1px #e49323;
+    background: -webkit-linear-gradient(#e33b13
+    , #e33b13);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+.tokenomics-container h1::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-45%);
+}
+.tokenomics-container h1::after{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 3px;
+    background: rgb(249,193,89);
+background: linear-gradient(138deg, rgba(249,193,89,1) 0%, rgba(240,229,160,1) 19%, rgba(166,220,168,1) 53%, rgba(103,238,205,1) 80%);
+    margin: auto;
+}
+
+.tokenomics-container .span{
+    color: white;
+}
+
+.tokenomics-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tokenomics-box{
+    border: 2px solid white;
+    background: rgba( 50, 185, 203, 0.4 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 5px );
+width: 500px;
+    height: 100%;
+}
+
+.tokenomics-content-1{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 10;
+}
+
+.info-1{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.tokenomics-box-2{
+    z-index: 2;
+}
+
+.tokenomics-box-2 img{
+    width: 600px;
+    z-index: 12;
+    user-select: none;
+}
+
+@media only screen and (max-width: 768px){
+    .tokenomics-row{
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+        object-fit: cover;
+        justify-content: center;
+    }
+    .tokenomics-box{
+        width: 450px;
+        display: flex;
+    }
+    .tokenomics-box-2 img{
+        width: 450px;
+    }
+    .overlayss img{
+        width: 300px;
+        position: absolute;
+        bottom: 25%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .tokenomics-box{
+        width: 350px;
+        display: flex;
+    }
+    .tokenomics-box-2 img{
+        margin-top: 40px;
+        width: 280px;
+    }
+}

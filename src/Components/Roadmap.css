@@ -1,0 +1,129 @@
+.roadmap-container{
+    width: 95%;
+    height: 100%;
+color: white;
+padding: 30px;
+position: relative;
+margin: 0 auto;
+}
+
+.roadmap-container h1{
+    font-size: 35px;
+    text-shadow: 3px 1px #e49323;
+    background: -webkit-linear-gradient(#e33b13, #e33b13);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+.roadmap-container h1::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-45%);
+}
+.roadmap-container h1::after{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 3px;
+    background: rgb(249,193,89);
+background: linear-gradient(138deg, rgba(249,193,89,1) 0%, rgba(240,229,160,1) 19%, rgba(166,220,168,1) 53%, rgba(103,238,205,1) 80%);
+    margin: auto;
+}
+
+.roadmap-row{
+    position: relative;
+}
+
+.Maintexts h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.slick-slide > div {
+    margin: 0 20px ;
+    background: rgba( 46, 135, 147, 0.4 );
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 13.5px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  .slick-list {
+    padding: 10px;
+}
+
+  .slick-active { 
+    padding: 20px 0; 
+  }
+
+  .slide{
+    scale: 0.7;
+}
+
+  .slick-current{
+    transform: scale(1.07) ;  
+  }
+
+  .slick-slide:not(.slick-active) { 
+    margin: 20px 0; 
+  }
+  
+
+.roadmapContent{
+    width: 100%;
+    border: 2px solid grey;
+    opacity: 0.3;
+    filter: blur(2px);
+}
+
+.roadmapContent-active{
+    opacity: 1;
+    filter: blur(0);
+}
+
+.roadmapImage img{
+    width: 200px;
+    margin: 40px auto;
+}
+
+.roadmapText{
+    margin: 40px auto;
+}
+
+.roadmapText .Maintexts{
+    text-align: center;
+}
+
+.roadmapText .MainContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.roadmapText .MainContent p{
+    font-size: 16px;
+    text-align: start;
+    text-align: center;
+    margin-block: 5px;
+}
+
+.slick-active li{
+    color: #11EAF1;
+    background: #11EAF1;
+}
+
+@media screen and (max-width: 768px){
+
+}
